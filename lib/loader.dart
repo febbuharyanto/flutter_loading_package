@@ -9,7 +9,7 @@ class Loader {
         child: LoadingIndicator(
             indicatorType: Indicator.lineSpinFadeLoader,
 
-            /// Required, The loading type of the widget
+            /// Required, The loading type of the widget col
             colors: [col1, col2],
 
             /// Optional, The color collections
