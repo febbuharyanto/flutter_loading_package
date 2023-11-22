@@ -26,29 +26,4 @@ class Loader {
       ),
     );
   }
-
-  lineSpinFadeLoaderForm(col1, col2, padding) {
-    return Padding(
-      padding: EdgeInsets.all(padding),
-      child: Center(
-        child: LoadingIndicator(
-            indicatorType: Indicator.lineSpinFadeLoader,
-
-            /// Required, The loading type of the widget
-            colors: [col1, col2],
-
-            /// Optional, The color collections
-            strokeWidth: 8,
-
-            /// Optional, The stroke of the line, only applicable to widget which contains line
-            backgroundColor: Colors.transparent,
-
-            /// Optional, Background of the widget
-            pathBackgroundColor: Colors.transparent
-
-            /// Optional, the stroke backgroundColor
-            ),
-      ),
-    );
-  }
 }
