@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_new, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 
@@ -25,5 +27,31 @@ class Loader {
             ),
       ),
     );
+  }
+
+  circularProgress(isShow) {
+    if (isShow == true) {
+      return new Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: new Center(
+          child: new Opacity(
+            opacity: 1.0,
+            child: Center(
+              child: CircularProgressIndicator(),
+            ),
+          ),
+        ),
+      );
+    } else {
+      return new Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: new Center(
+          child: new Opacity(
+            opacity: 1.0,
+            child: Center(),
+          ),
+        ),
+      );
+    }
   }
 }
