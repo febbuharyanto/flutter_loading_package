@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 
 class Loader {
-  lineSpinFadeLoader(col1, col2) {
+  lineSpinFadeLoader(col1, col2, padding) {
     return Padding(
-      padding: const EdgeInsets.all(170.0),
+      padding: EdgeInsets.all(padding),
       child: Center(
         child: LoadingIndicator(
             indicatorType: Indicator.lineSpinFadeLoader,
@@ -27,9 +27,9 @@ class Loader {
     );
   }
 
-  lineSpinFadeLoaderForm(col1, col2) {
+  lineSpinFadeLoaderForm(col1, col2, padding) {
     return Padding(
-      padding: const EdgeInsets.all(150.0),
+      padding: EdgeInsets.all(padding),
       child: Center(
         child: LoadingIndicator(
             indicatorType: Indicator.lineSpinFadeLoader,
